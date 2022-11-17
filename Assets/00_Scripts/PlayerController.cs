@@ -43,17 +43,4 @@ public class PlayerController : MonoBehaviour
 
         transform.position += flipMove * 5f * Time.deltaTime;
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Platform")
-        {
-            anim.SetBool("Collision", true);
-        }
-        else
-        {
-            anim.SetBool("Collision", false);
-        }
-
-    }
-
 }

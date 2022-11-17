@@ -14,11 +14,11 @@ public class Bounce : MonoBehaviour
             Rigidbody2D rigid = collision.gameObject.GetComponent<Rigidbody2D>();
             if(rigid!=null)
             {
+                collision.gameObject.GetComponent<Animator>().SetTrigger("Platform");
                 Vector2 velocity = rigid.velocity;
                 velocity.y = jumpForce;
                 rigid.velocity = velocity;
             }
         }
-        
     }
 }
