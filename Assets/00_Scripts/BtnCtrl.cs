@@ -8,15 +8,18 @@ public class BtnCtrl : MonoBehaviour
 
     public void pauseBtn()
     {
-        if(PauseActive)
-        {
-            Time.timeScale = 1;
-            PauseActive = false;
-        }
-        else
+        if(PauseActive==false)
         {
             Time.timeScale = 0;
             PauseActive = true;
+        }
+    }
+    public void ReturnGame()
+    {
+        if (PauseActive == true)
+        {
+            Time.timeScale = 1;
+            PauseActive = false;
         }
     }
 }
