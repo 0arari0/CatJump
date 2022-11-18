@@ -7,6 +7,9 @@ public class GameManager: MonoBehaviour
     public GameObject platformPrefab;
     public int platformCount = 300;
 
+    float catHeight = 0; 
+    int Score = 0;
+
     void Start()
     {
         Vector3 spawnPosition = new Vector3();
@@ -17,6 +20,9 @@ public class GameManager: MonoBehaviour
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
     }
-
+    //void Score()
+    //{
+        
+    //}
     
 }
