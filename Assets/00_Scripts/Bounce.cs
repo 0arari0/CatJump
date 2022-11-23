@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bounce : MonoBehaviour
 {
     public float jumpForce = 10f;
-
     
     void OnCollisionEnter2D(Collision2D collision)
     {

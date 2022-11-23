@@ -7,8 +7,8 @@ public class GameManager: MonoBehaviour
     public GameObject platformPrefab;
     public int platformCount = 300;
 
-    float catHeight = 0; 
-    int Score = 0;
+    //float catHeight = 0; 
+    //int Score = 0;
 
     void Start()
     {
