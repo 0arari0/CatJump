@@ -5,10 +5,13 @@ using UnityEngine;
 public class GameManager: MonoBehaviour
 {
     public GameObject platformPrefab;
-    public int platformCount = 300;
+    public GameObject SpringPlatformPrefab;
+    public int platformCount = 200;
 
-    //float catHeight = 0; 
-    //int Score = 0;
+    private void OnEnable() //게임이 실행될 때 먼저 실행됨. Awake - OnEnable - Start
+    {
+        Time.timeScale= 1.0f;
+    }
 
     void Start()
     {
@@ -19,10 +22,13 @@ public class GameManager: MonoBehaviour
             spawnPosition.x = Random.Range(-2f, 2f);
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
+        for(int i=0; i<platformCount; i++)
+        {
+            spawnPosition.y += Random.Range(1f, 5f);
+            spawnPosition.x = Random.Range(-2f, 2f);
+            Instantiate(SpringPlatformPrefab, spawnPosition, Quaternion.identity);
+        }
     }
-    //void Score()
-    //{
-        
-    //}
-    
+
+
 }
