@@ -17,7 +17,11 @@ public class Bounce : MonoBehaviour
                 Vector2 velocity = rigid.velocity;
                 velocity.y = jumpForce;
                 rigid.velocity = velocity;
+
+                Debug.Log("a");
             }
+            Debug.Log("d");
         }
+        
     }
 }

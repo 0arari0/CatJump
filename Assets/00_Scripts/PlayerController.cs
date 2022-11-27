@@ -10,9 +10,12 @@ public class PlayerController : MonoBehaviour
     public bool isTouchLeft = false;
     public bool isTouchRight = false;
     private float score = 0;
-
     public Text scoreTxt; //게임 중 점수
     public Text FinalScore; //게임 오버 전 마지막 점수
+    public Text BestScore;
+    private int SavedScore = 0;//저장점수 0으로 초기화
+    private string KeyString = "최고점수";
+
     private Rigidbody2D rigid;
     private Animator anim;
     public GameObject GameOverPanel;
@@ -20,6 +23,8 @@ public class PlayerController : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        SavedScore = PlayerPrefs.GetInt(KeyString,0);
+        BestScore.text = "최고점수: " + SavedScore.ToString("0");
     }
     void Update()
     {
@@ -104,6 +109,7 @@ public class PlayerController : MonoBehaviour
     void GameOver()
     {
         FinalScore.text = "점수: " + Mathf.RoundToInt(score).ToString(); //현재 점수 게임오버 화면에 띄우기
+        if (score >= SavedScore) PlayerPrefs.GetInt(KeyString, (int)score);
     }
 
     //화면 밖으로 나가지 않게 하는 함수

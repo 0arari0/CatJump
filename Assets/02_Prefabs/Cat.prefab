@@ -152,6 +152,7 @@ MonoBehaviour:
   isTouchRight: 0
   scoreTxt: {fileID: 0}
   FinalScore: {fileID: 0}
+  BestScore: {fileID: 0}
   GameOverPanel: {fileID: 0}
 --- !u!95 &7981619656292398704
 Animator:
