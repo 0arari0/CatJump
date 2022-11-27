@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 1108841677801187992, guid: 3435641a24f216a4b98bd52b80fb13c2, type: 3}
-  SpringPlatformPrefab: {fileID: 8778047869435558242, guid: ffaad7b5ff2526a449b216531dc41ced, type: 3}
+  SpringPlatformPrefab: {fileID: 1108841677801187992, guid: 0608c3fe8b485cf429edde6e69d00830, type: 3}
   platformCount: 300
 --- !u!1 &781233716
 GameObject:
@@ -2310,6 +2310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 7981619656292398707, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
+      propertyPath: scoreTxt
+      value: 
+      objectReference: {fileID: 834976588}
     - target: {fileID: 7981619656292398707, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
       propertyPath: GameOverPanel
       value: 

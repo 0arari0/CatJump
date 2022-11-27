@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
         if (rigid.velocity.y>0 && transform.position.y > score)
         {
             score = transform.position.y;
-            Debug.Log("뭐임");
         }
         scoreTxt.text = Mathf.RoundToInt(score).ToString();
         //RoundToInt = 반올림해서 int형으로 변환(Round = 반올림 / Ceil = 올림 / Floor = 내림
