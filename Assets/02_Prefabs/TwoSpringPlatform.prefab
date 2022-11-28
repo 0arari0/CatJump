@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1108841677801187991}
   - component: {fileID: 1108841677801187987}
   m_Layer: 0
-  m_Name: SpringPlatform
+  m_Name: TwoSpringPlatform
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: -20732511, guid: 7e596371b3624a34e9981038577d8309, type: 3}
+  m_Sprite: {fileID: -892142018, guid: 7e596371b3624a34e9981038577d8309, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -264,8 +264,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0.1}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.30312502, y: 0}
-  - {x: 0.30312502, y: 0}
+  - {x: -0.553125, y: 0}
+  - {x: 0.553125, y: 0}
   m_AdjacentStartPoint: {x: 0, y: 1}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -282,4 +282,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01adb031282dbf141bc49207fc3cffe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
+  jumpForce: 20

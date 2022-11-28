@@ -1607,7 +1607,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 1108841677801187992, guid: 3435641a24f216a4b98bd52b80fb13c2, type: 3}
   SpringPlatformPrefab: {fileID: 1108841677801187992, guid: 0608c3fe8b485cf429edde6e69d00830, type: 3}
-  platformCount: 20
+  TwoSpringPlatformPrefab: {fileID: 1108841677801187992, guid: cfdffe4e5534a6348abed5a323ba7a24, type: 3}
+  JumpPlatformPrefab: {fileID: 1108841677801187992, guid: f22f9041a13280a47975544d6b7c832b, type: 3}
+  CapPlatformPrefab: {fileID: 1108841677801187992, guid: f392d408fd906fb4c9eb98cbee4b37fd, type: 3}
+  platformCount: 300
 --- !u!1 &781233716
 GameObject:
   m_ObjectHideFlags: 0

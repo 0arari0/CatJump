@@ -19,10 +19,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigid;
     private Animator anim;
     public GameObject GameOverPanel;
+    SpriteRenderer spriteRenderer;
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         SavedScore = PlayerPrefs.GetInt(KeyString,0);
         BestScore.text = "최고점수: " + SavedScore.ToString("0");
     }
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
             moveX = 0;
 
         Flip();
+        
 
         //속도가 0보다 크고 y 포지션이 더 클 때 점수로 들어감
         if (rigid.velocity.y>0 && transform.position.y > score)
@@ -60,15 +63,16 @@ public class PlayerController : MonoBehaviour
         if(Input.GetAxisRaw("Horizontal")<0)
         {
             flipMove = Vector3.left;
-            transform.localScale = new Vector3(-1, 1, 1);
+            spriteRenderer.flipX = true;
         }
         else if(Input.GetAxisRaw("Horizontal")>0)
         {
             flipMove = Vector3.right;
-            transform.localScale = new Vector3(1, 1, 1);
+            spriteRenderer.flipX = false;
         }
 
         transform.position += flipMove * 5f * Time.deltaTime;
+        Debug.Log("?");
     }
     void OnTriggerEnter2D(Collider2D collision) //벽에 충돌 후 덜덜거림 막기 위한 로직
     {
