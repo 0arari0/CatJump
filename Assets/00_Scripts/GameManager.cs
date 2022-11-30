@@ -9,6 +9,8 @@ public class GameManager: MonoBehaviour
     public GameObject TwoSpringPlatformPrefab;
     public GameObject JumpPlatformPrefab;
     public GameObject CapPlatformPrefab;
+    public GameObject MovePlatformPrefab;
+
     public int platformCount = 200;
 
 
@@ -29,17 +31,23 @@ public class GameManager: MonoBehaviour
                 spawnPosition.x = Random.Range(-2f, 2f);
                 Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
             }
-            else if(Percentage<90) //1스프링 발판
+            else if(Percentage<85) //1스프링 발판
             {
                 spawnPosition.y += Random.Range(1f, 4f);
                 spawnPosition.x = Random.Range(-2f, 2f);
                 Instantiate(SpringPlatformPrefab, spawnPosition, Quaternion.identity);
             }
-            else if(Percentage<93) //2스프링 발판
+            else if(Percentage<90) //2스프링 발판
             {
                 spawnPosition.y += Random.Range(1f, 5f);
                 spawnPosition.x = Random.Range(-2f, 2f);
                 Instantiate(TwoSpringPlatformPrefab, spawnPosition, Quaternion.identity);
+            }
+            else if (Percentage < 95) //이동 발판
+            {
+                spawnPosition.y += Random.Range(1f, 5f);
+                spawnPosition.x = Random.Range(-2f, 2f);
+                Instantiate(MovePlatformPrefab, spawnPosition, Quaternion.identity);
             }
             else if(Percentage<97) //방방이 발판
             {
@@ -47,6 +55,7 @@ public class GameManager: MonoBehaviour
                 spawnPosition.x = Random.Range(-2f, 2f);
                 Instantiate(JumpPlatformPrefab, spawnPosition, Quaternion.identity);
             }
+            
             else //모자
             {
                 spawnPosition.y += Random.Range(1f, 5f);
