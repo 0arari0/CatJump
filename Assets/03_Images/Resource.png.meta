@@ -281,8 +281,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1571
         y: 1422
-        width: 114
-        height: 98
+        width: 259
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,27 +292,6 @@ TextureImporter:
       bones: []
       spriteID: 6460e29631864cb49a7c6ae2433b6aad
       internalID: -1785370716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Platform_3_2
-      rect:
-        serializedVersion: 2
-        x: 1693
-        y: 1432
-        width: 135
-        height: 94
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b585af611133dfb4284dae5199f8b9c2
-      internalID: 2080482365
       vertices: []
       indices: 
       edges: []
@@ -711,7 +690,6 @@ TextureImporter:
       JumpItem_3: 507744959
       Fish: 142097400
       JumpItem_4: 605316838
-      Platform_3: 567778143
       Fish_Minus: -1221664430
       Resource_24: -1907899891
       Resource_27: -925349167
@@ -734,14 +712,15 @@ TextureImporter:
       Resource_17: 149398241
       Resource_23: -720525697
       Platform_1: 368137282
+      Platform_3: 567778143
       Resource_33: 1237826041
-      Btn_Setting: 2111172563
       Resource_16: -786925221
-      Btn_Exit: -1317636392
+      Btn_Setting: 2111172563
       Platform_3_1: -1785370716
+      Btn_Exit: -1317636392
       Main_Acc: -1801263428
-      Select: 1524956145
       Cat: -66155231
+      Select: 1524956145
       Title: -1319190843
       ExitImg: 1987410593
       Resource_25: 182152423
