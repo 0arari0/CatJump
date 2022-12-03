@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position += flipMove * 5f * Time.deltaTime;
-        Debug.Log("?");
+        //Debug.Log("?");
     }
     void OnTriggerEnter2D(Collider2D collision) //벽에 충돌 후 덜덜거림 막기 위한 로직
     {
