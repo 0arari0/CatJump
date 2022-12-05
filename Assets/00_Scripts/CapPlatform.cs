@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CapPlatform : MonoBehaviour
 {
+    PlayerController playerController;
 
     void OnCollisionEnter2D(Collision2D collision)
     {

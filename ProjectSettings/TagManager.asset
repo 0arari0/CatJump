@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Over
   - Spring
+  - PlusFish
   layers:
   - Default
   - TransparentFX

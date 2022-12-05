@@ -1612,6 +1612,7 @@ MonoBehaviour:
   CapPlatformPrefab: {fileID: 1108841677801187992, guid: f392d408fd906fb4c9eb98cbee4b37fd, type: 3}
   MovePlatformPrefab: {fileID: 1108841677801187992, guid: da0accc7c4e974e4eb6110d24c4679bc, type: 3}
   BreakPlatformPrefab: {fileID: 1108841677801187992, guid: fa8edea26bd2b624a9e3557a7d659478, type: 3}
+  PlusFishPlatformPrefab: {fileID: 1108841677801187992, guid: 2aa2b1fe7d5ed3b439a68ead5140855a, type: 3}
   platformCount: 300
 --- !u!1 &781233716
 GameObject:
@@ -2349,6 +2350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 999961162495790550, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7981619656292398700, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2401,6 +2406,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 7981619656292398707, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
+      propertyPath: CapItem
+      value: 
+      objectReference: {fileID: 1659849468}
     - target: {fileID: 7981619656292398707, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
       propertyPath: scoreTxt
       value: 
@@ -2715,6 +2724,11 @@ CanvasRenderer:
 --- !u!4 &1624088021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7981619656292398700, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
+  m_PrefabInstance: {fileID: 1251228582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1659849468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 999961162495790550, guid: 5b6560081e64e1644a217b70c8353fe2, type: 3}
   m_PrefabInstance: {fileID: 1251228582}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1853904123

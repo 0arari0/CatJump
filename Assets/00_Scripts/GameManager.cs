@@ -11,6 +11,7 @@ public class GameManager: MonoBehaviour
     public GameObject CapPlatformPrefab;
     public GameObject MovePlatformPrefab;
     public GameObject BreakPlatformPrefab;
+    public GameObject PlusFishPlatformPrefab;
 
     public int platformCount = 200;
 
@@ -28,7 +29,7 @@ public class GameManager: MonoBehaviour
 
             spawnPosition.y += Random.Range(1f, 3f);
             spawnPosition.x = Random.Range(-2f, 2f);
-            Instantiate(CapPlatformPrefab, spawnPosition, Quaternion.identity);
+            Instantiate(PlusFishPlatformPrefab, spawnPosition, Quaternion.identity);
 
             //int Percentage = Random.Range(0, 100);
             //if (Percentage < 60) //기본 발판
