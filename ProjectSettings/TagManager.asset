@@ -9,6 +9,8 @@ TagManager:
   - Over
   - Spring
   - PlusFish
+  - Cap
+  - MinusFish
   layers:
   - Default
   - TransparentFX

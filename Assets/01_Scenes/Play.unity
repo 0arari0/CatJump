@@ -1613,6 +1613,7 @@ MonoBehaviour:
   MovePlatformPrefab: {fileID: 1108841677801187992, guid: da0accc7c4e974e4eb6110d24c4679bc, type: 3}
   BreakPlatformPrefab: {fileID: 1108841677801187992, guid: fa8edea26bd2b624a9e3557a7d659478, type: 3}
   PlusFishPlatformPrefab: {fileID: 1108841677801187992, guid: 2aa2b1fe7d5ed3b439a68ead5140855a, type: 3}
+  MinusFIshPlatformPrefab: {fileID: 1108841677801187992, guid: 8231fa383dfa59d4b860404b03ab57bb, type: 3}
   platformCount: 300
 --- !u!1 &781233716
 GameObject:

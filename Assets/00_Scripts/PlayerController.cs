@@ -120,4 +120,9 @@ public class PlayerController : MonoBehaviour
         fishScore += value;
         scoreTxt.text = (finalScore).ToString();
     }
+    public void MinusFishScore(int value)
+    {
+        fishScore -= value;
+        scoreTxt.text = (finalScore).ToString();
+    }
 }
