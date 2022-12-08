@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager: MonoBehaviour
 {
+    GameObject forDestroy;
+
     public GameObject platformPrefab;
     public GameObject SpringPlatformPrefab;
     public GameObject TwoSpringPlatformPrefab;
@@ -90,5 +92,12 @@ public class GameManager: MonoBehaviour
             }
         }
     }
-    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Over"))
+        {
+            forDestroy = GameObject.Find("Platform");
+            Destroy(forDestroy);
+        }    
+    }
 }
